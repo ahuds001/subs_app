@@ -1,0 +1,36 @@
+<!doctype html>
+<title>Inputs</title>
+<link rel=stylesheet type=text/css href='{{ url_for('static',filename='style.css')}}'>
+<div class=page>
+  <h1>Inputs</h1>
+  <div class=metanav>
+
+    <h4>
+      Please input the following:
+    </h4>
+
+    <form id='userinfoform' method='post' action='index' >
+      <p>
+    Nbr. of Players: <input type='text' name='nbr_of_players' />
+      </p>
+      <p>
+    Nbr. on the Field: <input type='text' name='nbr_on_field' />
+      </p>
+      <p>
+    Time in Each Half: <input type='text' name='time_in_half' />
+      </p>
+      <p>
+    Nbr. of Subs At a Time:
+    <select name='nbr_subs_at_a_time'>
+       <option value = "1">1</option>
+       <option value = "2">2</option>
+    </select>
+     </p>
+      <p>
+    <input type='submit' value='Submit' />
+      </p>
+    </form>
+
+  </div>
+</div>
+</html>
