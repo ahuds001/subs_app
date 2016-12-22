@@ -65,6 +65,7 @@ def index():
                 bad_input_error = "You can't do two subs at a time when you have odd subs"
                 return render_template('error.html',
                                     error = bad_input_error)
+            ## All errors account for I think
             else:
                 people = dict(zip([x+1 for x in range(nbr_of_players)],[0]*nbr_of_players))
                 on_field = [x+1 for x in range(nbr_on_field)]

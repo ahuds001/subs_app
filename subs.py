@@ -77,16 +77,14 @@ def one_sub_calcuations(value_list,people,on_field,counter,time_in_half):
         minutes_available = people[1]*half
         sub_mins = str(divmod(half,counter)[0])
         sub_secs = str(divmod(half,counter)[1])
+        ## a float with no 10s value will be length 3
         if len(sub_secs)==3:
             sub_secs="0"+sub_secs
         person_mins = str(divmod(minutes_available,counter)[0])
         person_secs = str(divmod(minutes_available,counter)[1])
         if len(person_secs)==3:
             person_secs="0"+person_secs
-        ##print("The number of rotations is: {}".format(counter))
-        ##print("The number of times each player will play is: {}".format(people[1]))
-        ##print("The number of minutes each player will play is: {}:{}".format(person_mins,person_secs))
-        ##print("The amount of time for a substitution is: {}:{}".format(sub_mins,sub_secs))
+        ## Converting values to whole number strings
         person_mins = person_mins[0:person_mins.find(".")]
         person_secs = person_secs[0:person_secs.find(".")]
         sub_mins = sub_mins[0:sub_mins.find(".")]
@@ -113,16 +111,14 @@ def two_sub_calcuations(value_list,people,on_field,counter,time_in_half):
         minutes_available = people[1]*half
         sub_mins = str(divmod(half,counter)[0])
         sub_secs = str(divmod(half,counter)[1])
+        ## a float with no 10s value will be length 3
         if len(sub_secs)==3:
             sub_secs="0"+sub_secs
         person_mins = str(divmod(minutes_available,counter)[0])
         person_secs = str(divmod(minutes_available,counter)[1])
         if len(person_secs)==3:
             person_secs="0"+person_secs
-        ##print("The number of rotations is: {}".format(counter))
-        ##print("The number of times each player will play is: {}".format(people[1]))
-        ##print("The number of minutes each player will play is: {}:{}".format(person_mins,person_secs))
-        ##print("The amount of time for a substitution is: {}:{}".format(sub_mins,sub_secs))
+        ## Converting values to whole number strings
         person_mins = person_mins[0:person_mins.find(".")]
         person_secs = person_secs[0:person_secs.find(".")]
         sub_mins = sub_mins[0:sub_mins.find(".")]
